@@ -693,57 +693,57 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Repository\\AlbumRepository",
             "name": "AlbumRepository",
-            "summary": "",
+            "summary": "Repository\u0020pour\u0020l\u0027entit\u00E9\u0020Album.",
             "url": "classes/App-Repository-AlbumRepository.html"
         },                {
             "fqsen": "\\App\\Repository\\AlbumRepository\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Constructeur\u0020de\u0020la\u0020classe\u0020AlbumRepository.",
             "url": "classes/App-Repository-AlbumRepository.html#method___construct"
         },                {
             "fqsen": "\\App\\Repository\\AlbumRepository\u003A\u003Aadd\u0028\u0029",
             "name": "add",
-            "summary": "",
+            "summary": "Ajoute\u0020un\u0020album\u0020\u00E0\u0020la\u0020base\u0020de\u0020donn\u00E9es.",
             "url": "classes/App-Repository-AlbumRepository.html#method_add"
         },                {
             "fqsen": "\\App\\Repository\\AlbumRepository\u003A\u003Aremove\u0028\u0029",
             "name": "remove",
-            "summary": "",
+            "summary": "Supprime\u0020un\u0020album\u0020de\u0020la\u0020base\u0020de\u0020donn\u00E9es.",
             "url": "classes/App-Repository-AlbumRepository.html#method_remove"
         },                {
             "fqsen": "\\App\\Repository\\AlbumRepository\u003A\u003AlisteAlbumsComplete\u0028\u0029",
             "name": "listeAlbumsComplete",
-            "summary": "",
+            "summary": "R\u00E9cup\u00E8re\u0020une\u0020liste\u0020compl\u00E8te\u0020des\u0020albums\u0020avec\u0020leurs\u0020styles\u0020et\u0020artistes\u0020associ\u00E9s.",
             "url": "classes/App-Repository-AlbumRepository.html#method_listeAlbumsComplete"
         },                {
             "fqsen": "\\App\\Repository\\ArtisteRepository",
             "name": "ArtisteRepository",
-            "summary": "",
+            "summary": "Repository\u0020pour\u0020l\u0027entit\u00E9\u0020Artiste.",
             "url": "classes/App-Repository-ArtisteRepository.html"
         },                {
             "fqsen": "\\App\\Repository\\ArtisteRepository\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "",
+            "summary": "Constructeur\u0020de\u0020la\u0020classe\u0020ArtisteRepository.",
             "url": "classes/App-Repository-ArtisteRepository.html#method___construct"
         },                {
             "fqsen": "\\App\\Repository\\ArtisteRepository\u003A\u003Aadd\u0028\u0029",
             "name": "add",
-            "summary": "",
+            "summary": "Ajoute\u0020un\u0020artiste\u0020\u00E0\u0020la\u0020base\u0020de\u0020donn\u00E9es.",
             "url": "classes/App-Repository-ArtisteRepository.html#method_add"
         },                {
             "fqsen": "\\App\\Repository\\ArtisteRepository\u003A\u003Aremove\u0028\u0029",
             "name": "remove",
-            "summary": "",
+            "summary": "Supprime\u0020un\u0020artiste\u0020de\u0020la\u0020base\u0020de\u0020donn\u00E9es.",
             "url": "classes/App-Repository-ArtisteRepository.html#method_remove"
         },                {
             "fqsen": "\\App\\Repository\\ArtisteRepository\u003A\u003AlisteArtistesComplete\u0028\u0029",
             "name": "listeArtistesComplete",
-            "summary": "",
+            "summary": "R\u00E9cup\u00E8re\u0020une\u0020liste\u0020compl\u00E8te\u0020des\u0020artistes\u0020avec\u0020leurs\u0020albums\u0020associ\u00E9s.",
             "url": "classes/App-Repository-ArtisteRepository.html#method_listeArtistesComplete"
         },                {
             "fqsen": "\\App\\Repository\\ArtisteRepository\u003A\u003AlisteArtistesCompletePaginee\u0028\u0029",
             "name": "listeArtistesCompletePaginee",
-            "summary": "",
+            "summary": "R\u00E9cup\u00E8re\u0020une\u0020liste\u0020pagin\u00E9e\u0020des\u0020artistes\u0020avec\u0020leurs\u0020albums\u0020associ\u00E9s.",
             "url": "classes/App-Repository-ArtisteRepository.html#method_listeArtistesCompletePaginee"
         },                {
             "fqsen": "\\App\\Repository\\LabelRepository",

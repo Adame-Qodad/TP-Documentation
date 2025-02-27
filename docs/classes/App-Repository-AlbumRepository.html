@@ -151,12 +151,17 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Repository/AlbumRepository.php"><a href="files/src-repository-albumrepository.html"><abbr title="src/Repository/AlbumRepository.php">AlbumRepository.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
     </aside>
 
-        
+            <p class="phpdocumentor-summary">Repository pour l&#039;entité Album.</p>
 
+
+    <section class="phpdocumentor-description"><p>Cette classe permet de gérer les opérations de persistance (ajout, suppression, etc.)
+pour l'entité <code class="prettyprint">Album</code>. Elle étend <code class="prettyprint">ServiceEntityRepository</code> de Doctrine, ce qui fournit
+des méthodes de base pour interagir avec la base de données.</p>
+</section>
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -204,12 +209,14 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
+<dd>Constructeur de la classe AlbumRepository.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-Repository-AlbumRepository.html#method_add">add()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
+<dd>Ajoute un album à la base de données.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-Repository-AlbumRepository.html#method_find">find()</a>
@@ -240,12 +247,14 @@
     <span>
                                 &nbsp;: array&lt;string|int, <abbr title="\Doctrine\ORM\Query">Query</abbr>&gt;    </span>
 </dt>
+<dd>Récupère une liste complète des albums avec leurs styles et artistes associés.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a class="" href="classes/App-Repository-AlbumRepository.html#method_remove">remove()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
+<dd>Supprime un album de la base de données.</dd>
 
     </dl>
 
@@ -275,11 +284,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Repository/AlbumRepository.php"><a href="files/src-repository-albumrepository.html"><abbr title="src/Repository/AlbumRepository.php">AlbumRepository.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">20</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Constructeur de la classe AlbumRepository.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\Persistence\ManagerRegistry">ManagerRegistry</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$registry</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
@@ -295,7 +305,9 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\Persistence\ManagerRegistry">ManagerRegistry</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>Le registre du gestionnaire d'entités de Doctrine.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -319,11 +331,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Repository/AlbumRepository.php"><a href="files/src-repository-albumrepository.html"><abbr title="src/Repository/AlbumRepository.php">AlbumRepository.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Ajoute un album à la base de données.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Entity-Album.html"><abbr title="\App\Entity\Album">Album</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flush</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
@@ -331,7 +344,10 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Cette méthode permet de persister un album dans la base de données. Si le paramètre
+<code class="prettyprint">$flush</code> est <code class="prettyprint">true</code>, les modifications seront immédiatement enregistrées.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -339,14 +355,18 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Entity-Album.html"><abbr title="\App\Entity\Album">Album</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>L'entité album à ajouter.</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$flush</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>Si <code class="prettyprint">true</code>, les modifications seront immédiatement enregistrées.</p>
+</section>
+
             </dd>
             </dl>
 
@@ -382,7 +402,9 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Recherche un album par son ID.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -444,7 +466,9 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Récupère tous les albums.</p>
+</section>
+
     
     
 
@@ -482,7 +506,9 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Recherche des albums selon des critères spécifiques.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -551,7 +577,9 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Recherche un album avec des critères spécifiques.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -594,11 +622,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Repository/AlbumRepository.php"><a href="files/src-repository-albumrepository.html"><abbr title="src/Repository/AlbumRepository.php">AlbumRepository.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Récupère une liste complète des albums avec leurs styles et artistes associés.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">listeAlbumsComplete</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\Doctrine\ORM\Query">Query</abbr>&gt;</span></code>
@@ -606,7 +635,11 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Cette méthode crée une requête pour obtenir tous les albums triés par nom,
+incluant les informations des styles et des artistes associés.
+Elle renvoie une <code class="prettyprint">Query</code> qui peut être exécutée pour obtenir les résultats.</p>
+</section>
+
     
     
 
@@ -616,7 +649,7 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type">array&lt;string|int, <abbr title="\Doctrine\ORM\Query">Query</abbr>&gt;</span>
                     &mdash;
-                <section class="phpdocumentor-description"><p>Returns an array of Artiste objects</p>
+                <section class="phpdocumentor-description"><p>Retourne une requête des albums avec leurs styles et artistes.</p>
 </section>
 
             </section>
@@ -636,11 +669,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Repository/AlbumRepository.php"><a href="files/src-repository-albumrepository.html"><abbr title="src/Repository/AlbumRepository.php">AlbumRepository.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">34</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Supprime un album de la base de données.</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">remove</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Entity-Album.html"><abbr title="\App\Entity\Album">Album</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flush</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
@@ -648,7 +682,10 @@
     <div class="phpdocumentor-label-line">
         </div>
     
-    
+        <section class="phpdocumentor-description"><p>Cette méthode permet de supprimer un album de la base de données. Si le paramètre
+<code class="prettyprint">$flush</code> est <code class="prettyprint">true</code>, les modifications seront immédiatement enregistrées.</p>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -656,14 +693,18 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Entity-Album.html"><abbr title="\App\Entity\Album">Album</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>L'entité album à supprimer.</p>
+</section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$flush</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"><p>Si <code class="prettyprint">true</code>, les modifications seront immédiatement enregistrées.</p>
+</section>
+
             </dd>
             </dl>
 
